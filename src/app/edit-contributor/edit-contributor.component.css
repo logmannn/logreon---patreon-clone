@@ -1,0 +1,12 @@
+label {
+  display: block;
+}
+
+label+input, label+textarea {
+  margin-bottom: 20px;
+}
+
+.rewards {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}

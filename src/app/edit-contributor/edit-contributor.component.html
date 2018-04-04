@@ -1,18 +1,35 @@
 <h4>Edit Contributor</h4>
 
-<label>New Contributor Title:</label>
-<input [(ngModel)]="selectedContributor.title">
+<label>New Contributor Organization:</label>
+<input [(ngModel)]="selectedContributor.organization">
 <br>
 
-<label>New Contributor Artist:</label>
-<input [(ngModel)]="selectedContributor.artist">
+<label>New Contributor Project:</label>
+<input [(ngModel)]="selectedContributor.project">
 <br>
 
 <label>New Contributor Description:</label>
-<input [(ngModel)]="selectedContributor.description">
-
-<label>New Contributor Price:</label>
-<input [(ngModel)]="selectedContributor.price">
+<textarea [(ngModel)]="selectedContributor.description"></textarea>
+<br>
+<b class="rewards">Low Reward</b>
+<label>Value:</label>
+<input [(ngModel)]="selectedContributor.rewards.low.value">
+<!--
+<label>Description:</label>
+<input [(ngModel)]="selectedContributor.rewards.low.description">
+<br>
+<b class="rewards">Medium Reward</b>
+<label>Value:</label>
+<input [(ngModel)]="selectedContributor.rewards.medium.value">
+<label>Description:</label>
+<input [(ngModel)]="selectedContributor.rewards.medium.description">
+<br>
+<b class="rewards">High Reward</b>
+<label>Value:</label>
+<input [(ngModel)]="selectedContributor.rewards.high.value">
+<label>Description:</label>
+<input [(ngModel)]="selectedContributor.rewards.high.description">
+<br> -->
 
 <button (click)="beginUpdatingContributor(selectedContributor)">Update</button>
 

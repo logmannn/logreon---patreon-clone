@@ -16,6 +16,8 @@ export class ContributorService {
   }
 
   addContributor(newContributor: Contributor) {
+    console.log("reached");
+    console.log(newContributor);
     this.contributors.push(newContributor);
   }
 
@@ -24,10 +26,12 @@ export class ContributorService {
   }
 
   updateContributor(localUpdatedContributor) {
+    console.log("updated");
     let contributorEntryInFirebase = this.getContributorById(localUpdatedContributor.$key);
-    contributorEntryInFirebase.update({title: localUpdatedContributor.title,
-                                artist: localUpdatedContributor.artist,
-                                description: localUpdatedContributor.description});
+    contributorEntryInFirebase.update({organization: localUpdatedContributor.organization,
+                                project: localUpdatedContributor.project,
+                                description: localUpdatedContributor.description, rewards: localUpdatedContributor.rewards});
+
   }
 
   deleteContributor(localContributorToDelete) {

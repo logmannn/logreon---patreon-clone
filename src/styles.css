@@ -22,3 +22,7 @@ h1 {
 .main-content {
   margin-bottom: 80px;
 }
+
+label, input {
+  display: block;
+}

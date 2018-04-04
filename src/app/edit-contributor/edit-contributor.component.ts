@@ -24,5 +24,4 @@ export class EditContributorComponent implements OnInit {
       this.contributorService.deleteContributor(contributorToDelete);
     }
   }
-
 }

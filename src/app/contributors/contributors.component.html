@@ -2,7 +2,7 @@
 
 <div class="card" *ngFor="let contributor of contributors | async">
   <div class="card-body">
-    <h3 (click)="goToDetailPage(contributor)"><em>{{contributor.title}}</em> by {{contributor.artist}}</h3>
+    <h3 (click)="goToDetailPage(contributor)">{{contributor.organization}}'s {{contributor.project}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       {{contributor.description}}
       <hr>

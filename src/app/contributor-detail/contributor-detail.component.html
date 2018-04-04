@@ -1,6 +1,20 @@
 <div>
-  <h3>{{(contributorToDisplay | async)?.title}}</h3>
-  <h4>{{(contributorToDisplay | async)?.artist}}</h4>
+  <h3>{{(contributorToDisplay | async)?.organization}}</h3>
+  <h4>{{(contributorToDisplay | async)?.project}}</h4>
   <p>{{(contributorToDisplay | async)?.description}}</p>
-  <p>{{(contributorToDisplay | async)?.price | currency }}</p>
+  <b>Low Reward</b>
+  <ul>
+    <li>Value: {{(contributorToDisplay | async)?.rewards.low.value | currency}}</li>
+    <li>Description: {{(contributorToDisplay | async)?.rewards.low.description}}</li>
+  </ul>
+  <b>Medium Reward</b>
+  <ul>
+    <li>Value: {{(contributorToDisplay | async)?.rewards.medium.value | currency}}</li>
+    <li>Description: {{(contributorToDisplay | async)?.rewards.medium.description}}</li>
+  </ul>
+  <b>High Reward</b>
+  <ul>
+    <li>Value: {{(contributorToDisplay | async)?.rewards.high.value | currency}}</li>
+    <li>Description: {{(contributorToDisplay | async)?.rewards.high.description}}</li>
+  </ul>
 </div>

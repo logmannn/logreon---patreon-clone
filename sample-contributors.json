@@ -1,16 +1,39 @@
 { "contributors": [{
-    "title": " Piper At The Gates of Dawn",
-    "artist": "Pink Floyd",
-    "description": "A live  contributor by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom."
-    },
-    {
-    "title": "Dilate",
-    "artist": "Ani DiFranco",
-    "description": "Her highest-selling and most acclaimed contributor, released in 1996."
+    "organization": " Wylie Wonkers",
+    "project": "Awesome playing kard art",
+    "description": "I'm a lone paintbrush behind Reign of Sin and Rule of Virtue - a series of hand-painted playing card illustrations inspired by the deadly sins and heavenly virtues.  My playing card projects are creator-owned, one-woman efforts made possible entirely by the continuing support of my amazing patrons! Thank you for joining me on this journey through strange (and often dangerous) lands...",
+    "rewards": {
+        "low": {
+          "value": 9,
+          "description": "A postcard"
+        },
+        "medium": {
+          "value": 10,
+          "description": "A poster"
+        },
+        "high": {
+          "value": 11,
+          "description": "A deck of cards, limited edition"
+        }
       },
-    {
-    "title": "Axis Bold As Love",
-    "artist": "Jimi Hendrix",
-    "description": "Second studio contributor by the English-American band, released in 1967."
-  }]
+    "posts": [
+        {
+          "title": "February Art Giveaway results",
+          "timePosted": "Mar 10 at 1:47pm",
+          "body": "Congratulations again Jessica!! I'll be shipping your drawing later this month. For anyone lo",
+          "likes": [],
+          "comments": [],
+          "rewardLock": "low"
+        },
+        {
+          "title": "Queen of Pride II process video",
+          "timePosted": "Mar 11 at 1:47pm",
+          "body": "I've just posted the first process v",
+          "likes": [],
+          "comments": [],
+          "rewardLock": ""          
+        }
+      ]
+    }
+  ]
 }
