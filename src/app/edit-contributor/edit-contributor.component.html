@@ -1,0 +1,20 @@
+<h4>Edit Contributor</h4>
+
+<label>New Contributor Title:</label>
+<input [(ngModel)]="selectedContributor.title">
+<br>
+
+<label>New Contributor Artist:</label>
+<input [(ngModel)]="selectedContributor.artist">
+<br>
+
+<label>New Contributor Description:</label>
+<input [(ngModel)]="selectedContributor.description">
+
+<label>New Contributor Price:</label>
+<input [(ngModel)]="selectedContributor.price">
+
+<button (click)="beginUpdatingContributor(selectedContributor)">Update</button>
+
+<hr>
+<button (click)="beginDeletingContributor(selectedContributor)">Delete</button>

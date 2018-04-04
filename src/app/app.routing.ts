@@ -2,8 +2,8 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
-import { MarketplaceComponent }   from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component'
+import { ContributorComponent }   from './contributors/contributors.component';
+import { ContributorDetailComponent } from './contributor-detail/contributor-detail.component'
 import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
@@ -16,12 +16,12 @@ const appRoutes: Routes = [
    component: AboutComponent
  },
  {
-  path: 'marketplace',
-  component: MarketplaceComponent
+  path: 'contributor',
+  component: ContributorComponent
 },
 {
-   path: 'albums/:id',
-   component: AlbumDetailComponent
+   path: 'contributors/:id',
+   component: ContributorDetailComponent
  },
  {
    path: 'admin',

@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
-import { AlbumService } from '../album.service';
-import { Album } from '../album.model';
+import { ContributorService } from '../contributor.service';
+import { Contributor } from '../contributor.model';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [AlbumService]
+  providers: [ContributorService]
 })
 
 export class AdminComponent {
 
-  constructor(private albumService: AlbumService) { }
+  constructor(private contributorService: ContributorService) { }
 
   ngOnInit() {
   }
 
   submitForm(title: string, artist: string, description: string, price: number) {
-    let newAlbum: Album = new Album(title, artist, description, price);
-    this.albumService.addAlbum(newAlbum);
+    let newContributor: Contributor = new Contributor(title, artist, description, price);
+    this.contributorService.addContributor(newContributor);
   }
 
 }

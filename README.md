@@ -1,4 +1,6 @@
-# Albums
+# Logreon
+
+## A crowd-sourcing site for Logan's and Ron's alike.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 

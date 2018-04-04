@@ -1,27 +1,27 @@
 <div class="card">
   <div class="card-header">
-    <h3>Add New Album to Inventory</h3>
+    <h3>Add New Contributor's to Inventory</h3>
   </div>
   <div class="card-body">
-    <label>Album Title:</label>
+    <label>Contributor's Title:</label>
     <br>
     <input #newTitle>
   </div>
 
   <div class="card-body">
-    <label>Album Artist:</label>
+    <label>Contributor's Artist:</label>
     <br>
     <input #newArtist>
   </div>
 
   <div class="card-body">
-    <label>Album Description:</label>
+    <label>Contributor's Description:</label>
     <br>
     <textarea #newDescription></textarea>
   </div>
 
   <div class="card-body">
-    <label>Album Price:</label>
+    <label>Contributor's Price:</label>
     <br>
     <input #newPrice>
   </div>
@@ -31,5 +31,5 @@
 <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newPrice.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newPrice.value=''" class="btn btn-primary">Add</button>
 
 <div>
-  <app-marketplace></app-marketplace>
+  <app-contributors></app-contributors>
 </div>
