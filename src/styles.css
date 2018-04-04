@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+.navbar {
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: lightgreen;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
