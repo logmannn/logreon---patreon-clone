@@ -19,10 +19,16 @@
     <br>
     <textarea #newDescription></textarea>
   </div>
+
+  <div class="card-body">
+    <label>Album Price:</label>
+    <br>
+    <input #newPrice>
+  </div>
 </div>
 <br>
 
-<button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''" class="btn btn-primary">Add</button>
+<button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newPrice.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newPrice.value=''" class="btn btn-primary">Add</button>
 
 <div>
   <app-marketplace></app-marketplace>
