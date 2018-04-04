@@ -39,6 +39,9 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
+#Firebase credentials
+/src/app/api-keys.ts
+
 # System Files
 .DS_Store
 Thumbs.db
