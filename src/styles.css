@@ -26,3 +26,9 @@ h1 {
 label, input {
   display: block;
 }
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+}

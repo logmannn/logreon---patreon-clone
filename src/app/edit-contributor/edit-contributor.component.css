@@ -10,3 +10,5 @@ label+input, label+textarea {
   border-bottom: 1px solid black;
   margin-bottom: 20px;
 }
+
+.update {margin-top: 20px;}

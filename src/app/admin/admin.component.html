@@ -1,56 +1,70 @@
 <div class="card">
-  <div class="card-header">
-    <h3>Add New Contributor's to Inventory</h3>
-  </div>
   <div class="card-body">
-    <label>Contributor's Organization:</label>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header">
+            <h3>Add New Contributor's to Inventory</h3>
+          </div>
+          <div class="card-body">
+            <label>Contributor's Organization:</label>
+            <br>
+            <input #newOrganization>
+
+            <label>Contributor's Project:</label>
+            <br>
+            <input #newProject>
+
+            <label>Contributor's Description:</label>
+            <br>
+            <textarea #newDescription></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">
+            <h3>Contributor's Rewards:</h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card-body">
+                  <label><b>Low Reward:</b></label><br>
+                  <label>Value:</label>
+                  <input #lowValue>
+                  <label>Description:</label><br>
+                  <input #lowDescription>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <label><b>Medium Reward:</b></label><br>
+                  <label>Value:</label>
+                  <input #mediumValue>
+                  <label>Description:</label><br>
+                  <textarea #mediumDescription></textarea>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card-body">
+                    <label><b>High Reward:</b></label><br>
+                    <label>Value:</label>
+                    <input #highValue>
+                    <label>Description:</label><br>
+                    <textarea #highDescription></textarea>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <br>
-    <input #newOrganization>
-  </div>
-
-  <div class="card-body">
-    <label>Contributor's Project:</label>
+    <button (click)="submitForm(newOrganization.value, newProject.value, newDescription.value, lowValue.value, lowDescription.value, mediumValue.value, mediumDescription.value,highValue.value, highDescription.value); newOrganization.value=''; newProject.value=''; newDescription.value=''; lowValue.value=''; lowDescription.value=''; mediumValue.value=''; mediumDescription.value='';highValue.value=''; highDescription.value=''" class="btn btn-primary">Add</button>
     <br>
-    <input #newProject>
-  </div>
-
-  <div class="card-body">
-    <label>Contributor's Description:</label>
-    <br>
-    <textarea #newDescription></textarea>
-  </div>
-
-
-  <div class="card-body">
-    <label>Contributor's Rewards:</label>
-  </div>
-
-  <div class="card-body">
-    <label><b>Low Reward:</b></label><br>
-    <label>Value:</label>
-    <input #lowValue>
-    <label>Description:</label>
-    <input #lowDescription>
-  </div>
-  <div class="card-body">
-    <label><b>Medium Reward:</b></label><br>
-    <label>Value:</label>
-    <input #mediumValue>
-    <label>Description:</label>
-    <input #mediumDescription>
-  </div>
-  <div class="card-body">
-    <label><b>High Reward:</b></label><br>
-    <label>Value:</label>
-    <input #highValue>
-    <label>Description:</label>
-    <input #highDescription>
   </div>
 </div>
-<br>
-
-<button (click)="submitForm(newOrganization.value, newProject.value, newDescription.value, lowValue.value, lowDescription.value, mediumValue.value, mediumDescription.value,highValue.value, highDescription.value); newOrganization.value=''; newProject.value=''; newDescription.value=''; lowValue.value=''; lowDescription.value=''; mediumValue.value=''; mediumDescription.value='';highValue.value=''; highDescription.value=''" class="btn btn-primary">Add</button>
-
 <div>
   <app-contributors></app-contributors>
 </div>
