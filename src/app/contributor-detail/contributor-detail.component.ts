@@ -5,6 +5,7 @@ import { Contributor } from '../contributor.model';
 import { ContributorService } from '../contributor.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
+
 @Component({
   selector: 'app-contributor-detail',
   templateUrl: './contributor-detail.component.html',
@@ -15,6 +16,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ContributorDetailComponent implements OnInit {
   contributorId: string;
   contributorToDisplay;
+  postBodyToDisplay;
+
   constructor(
     private route: ActivatedRoute,
     private location: Location,
@@ -25,6 +28,7 @@ export class ContributorDetailComponent implements OnInit {
       this.contributorId = urlParameters['id'];
     });
     this.contributorToDisplay = this.contributorService.getContributorById(this.contributorId);
+    this.postBodyToDisplay = this.contributorToDisplay;
     }
 
   }

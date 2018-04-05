@@ -1,20 +1,34 @@
-<div>
-  <h3>{{(contributorToDisplay | async)?.organization}}</h3>
-  <h4>{{(contributorToDisplay | async)?.project}}</h4>
-  <p>{{(contributorToDisplay | async)?.description}}</p>
-  <b>Low Reward</b>
-  <ul>
-    <li>Value: {{(contributorToDisplay | async)?.rewards.low.value | currency}}</li>
-    <li>Description: {{(contributorToDisplay | async)?.rewards.low.description}}</li>
-  </ul>
-  <b>Medium Reward</b>
-  <ul>
-    <li>Value: {{(contributorToDisplay | async)?.rewards.medium.value | currency}}</li>
-    <li>Description: {{(contributorToDisplay | async)?.rewards.medium.description}}</li>
-  </ul>
-  <b>High Reward</b>
-  <ul>
-    <li>Value: {{(contributorToDisplay | async)?.rewards.high.value | currency}}</li>
-    <li>Description: {{(contributorToDisplay | async)?.rewards.high.description}}</li>
-  </ul>
+<div class="row">
+
+  <div class="col-lg-9">
+    <h3>{{(contributorToDisplay | async)?.organization}}</h3>
+    <h4>{{(contributorToDisplay | async)?.project}}</h4>
+    <p>{{(contributorToDisplay | async)?.description}}</p><br>
+
+    <h4>Posts</h4>
+    <div class="card wholecard" *ngFor="let contributorToDisplay of (contributorToDisplay | async)?.posts">
+      {{contributorToDisplay.title}}<br>
+      {{contributorToDisplay.body}}<br>
+      Reward Level: {{contributorToDisplay.rewardLock}}<br>
+      Timestamp: {{contributorToDisplay.timePosted}}<br>
+    </div>
+
+  </div>
+  <div class="col-lg-3">
+    <b>Low Reward</b>
+    <ul>
+      <li>Value: {{(contributorToDisplay | async)?.rewards.low.value | currency}}</li>
+      <li>Description: {{(contributorToDisplay | async)?.rewards.low.description}}</li>
+    </ul>
+    <b>Medium Reward</b>
+    <ul>
+      <li>Value: {{(contributorToDisplay | async)?.rewards.medium.value | currency}}</li>
+      <li>Description: {{(contributorToDisplay | async)?.rewards.medium.description}}</li>
+    </ul>
+    <b>High Reward</b>
+    <ul>
+      <li>Value: {{(contributorToDisplay | async)?.rewards.high.value | currency}}</li>
+      <li>Description: {{(contributorToDisplay | async)?.rewards.high.description}}</li>
+    </ul>
+  </div>
 </div>

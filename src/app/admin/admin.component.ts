@@ -17,11 +17,14 @@ export class AdminComponent {
   }
 
   submitForm(organization: string, project: string, description: string, lowValue: number, lowDescription: string, mediumValue: number, mediumDescription: string, highValue: number, highDescription: string) {
-    let Rewards = {low: {value: lowValue, description: lowDescription},
-                    medium: {value: mediumValue, description: mediumDescription},
-                    high: {value: highValue, description: highDescription}
-                  };
-    let newContributor: Contributor = new Contributor(organization, project, description, Rewards);
+    let Rewards = {
+      low: {value: lowValue, description: lowDescription},
+      medium: {value: mediumValue, description: mediumDescription},
+      high: {value: highValue, description: highDescription}
+    };
+    let Posts = {
+    };
+    let newContributor: Contributor = new Contributor(organization, project, description, Rewards, Posts);
     this.contributorService.addContributor(newContributor);
   }
 }

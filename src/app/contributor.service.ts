@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Contributor } from './contributor.model';
+
 // import { ALBUMS } from './mock-contributor';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
