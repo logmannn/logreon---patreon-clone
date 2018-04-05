@@ -29,10 +29,10 @@
     <label><b>Low Reward:</b></label><br>
     <label>Value:</label>
     <input #lowValue>
-    <!-- <label>Description:</label>
-    <input #lowDescription> -->
+    <label>Description:</label>
+    <input #lowDescription>
   </div>
-  <!-- <div class="card-body">
+  <div class="card-body">
     <label><b>Medium Reward:</b></label><br>
     <label>Value:</label>
     <input #mediumValue>
@@ -45,11 +45,11 @@
     <input #highValue>
     <label>Description:</label>
     <input #highDescription>
-  </div> -->
+  </div>
 </div>
 <br>
 
-<button (click)="submitForm(newOrganization.value, newProject.value, newDescription.value, lowValue.value); newOrganization.value=''; newProject.value=''; newDescription.value=''; lowValue.value='';" class="btn btn-primary">Add</button>
+<button (click)="submitForm(newOrganization.value, newProject.value, newDescription.value, lowValue.value, lowDescription.value, mediumValue.value, mediumDescription.value,highValue.value, highDescription.value); newOrganization.value=''; newProject.value=''; newDescription.value=''; lowValue.value=''; lowDescription.value=''; mediumValue.value=''; mediumDescription.value='';highValue.value=''; highDescription.value=''" class="btn btn-primary">Add</button>
 
 <div>
   <app-contributors></app-contributors>

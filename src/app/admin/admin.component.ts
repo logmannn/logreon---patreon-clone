@@ -16,8 +16,11 @@ export class AdminComponent {
   ngOnInit() {
   }
 
-  submitForm(organization: string, project: string, description: string, value: number) {
-    let Rewards = {low: {value: value}};
+  submitForm(organization: string, project: string, description: string, lowValue: number, lowDescription: string, mediumValue: number, mediumDescription: string, highValue: number, highDescription: string) {
+    let Rewards = {low: {value: lowValue, description: lowDescription},
+                    medium: {value: mediumValue, description: mediumDescription},
+                    high: {value: highValue, description: highDescription}
+                  };
     let newContributor: Contributor = new Contributor(organization, project, description, Rewards);
     this.contributorService.addContributor(newContributor);
   }
